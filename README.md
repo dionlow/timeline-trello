@@ -4,6 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `yarn install`
+Builds app, node modules etc. 
+
 ### `yarn start`
 
 Runs the app in the development mode.<br>
@@ -17,7 +20,7 @@ Clicking on the 'Generate TimelineTrello' Logo in the top left will generate 100
 
 ## Required Section
 
-### How long you spent on the assignment. 
+### Time Spent. 
 
 7hours
 * 1 hour on generating paper prototypes and mocking some designs.  
@@ -42,7 +45,7 @@ Other mockups included:
 * Single Lane Column with events sorted by start date for each row in left side component. Right side shows overlapping bars which highlights when row is selected. Hybrid design...but also more work. 
 * Dynamic Programming solution modeled after the original dyanamic programming name -- train schedules that updated upon event delay or change allowing no bar overlap. Efficient and conveys plenty of information but when item is added the entire schedule would update the state and the bars might switch positions. Large number of events would cause user to lose track of where previous events were and cause them to search for it again...this solution could also be seen as over-engineered for a very specific use case as differences lie between user gernated and machine generated swimlane schedules. 
 
-The selected design follows a dual axis timeline that are bucketed via specific intervals. These intervals could be optimized via an algorithm or pre-selected for most common use cases (year, month, day, etc.) Upon research, I used a trello like design to execute. 
+The selected design follows a dual axis timeline that are bucketed via specific intervals. These intervals could be optimized via an algorithm or pre-selected for most common use cases (year, month, day, etc.) Upon research, I used a trello like design to execute. The grid design is simple and straight foward. It's easy to modify style and keep components modularized. The design also is able to take in and render a large amount of events. 
 
 
 ### How you would test this if you had more time.
