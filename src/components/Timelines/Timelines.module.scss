@@ -1,0 +1,18 @@
+@import '../../utility/variables.scss';
+
+.Timelines{
+    display: flex;
+    overflow-x: auto;
+
+    // defines timeline children components
+    > * {
+      flex: 0 0 auto; // 'rigid' lists
+      margin-left: $gap;
+    }
+
+    // explicit space so flexbox does not absorb it
+    &::after {
+      content: '';
+      flex: 0 0 $gap;
+    }
+}

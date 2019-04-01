@@ -1,0 +1,72 @@
+@import "../../../utility/variables.scss";
+
+.Timeline {
+    width: $list-width;
+    height: calc(100% - #{$gap} - #{$scrollbar-thickness});
+  
+    > * {
+      background-color: $list-bg-color;
+      color: #333;
+      padding: 0 $gap;
+    }
+  
+    header {
+      line-height: $list-header-height;
+      font-size: 16px;
+      font-weight: bold;
+      border-top-left-radius: $list-border-radius;
+      border-top-right-radius: $list-border-radius;
+    }
+  
+    footer {
+      line-height: $list-footer-height;
+      border-bottom-left-radius: $list-border-radius;
+      border-bottom-right-radius: $list-border-radius;
+      color: #888;
+    }
+  
+    ul {
+      list-style: none;
+      margin: 0;
+      max-height: calc(100% - #{$list-header-height} - #{$list-footer-height});
+      overflow-y: auto;
+
+        li {
+            background-color: #fff;
+            padding: $gap;
+            &:not(:last-child) {
+            margin-bottom: $gap;
+            }
+    
+            border-radius: $card-border-radius;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+
+            .Light {
+                color: #b7b7b7;
+            }
+
+            p {
+                margin-block-start: .5em;
+                margin-block-end: .1em;
+                font-weight: 400;
+                font-size: 12px;  
+            }
+
+            .Name {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            .Name:hover{
+                overflow: wrap; 
+                white-space: normal; 
+                background-color:#FFF;
+            }
+        }
+
+        li:hover {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+    }
+}

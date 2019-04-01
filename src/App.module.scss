@@ -1,0 +1,17 @@
+@import "./utility/variables.scss";
+
+.App {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: $navbar-height 1fr;
+  color: #b7b7b7;
+}
+
+h1 {
+  margin-left: $gap;
+  font-weight: 100; 
+}
+
+h1:hover {
+  color: #333;
+}
